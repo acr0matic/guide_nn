@@ -62,8 +62,50 @@
 
 <body>
   <!-- Шапка -->
-  <header id="header">
+  <header id="header" class="header">
+    <div class="header__wrapper">
+      <div class="header__logo d-none d-md-block">
+        <a href="">
+          <img class="logo logo--header" src="img/logo.svg" alt="">
+        </a>
+      </div>
+      <!-- /.header__logo -->
 
+      <div class="header__nav d-none d-lg-block">
+        <nav class="nav nav--header">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a class="nav__link" href="">Прогулки</a>
+            </li>
+
+            <li class="nav__item">
+              <a class="nav__link" href="">О нас</a>
+            </li>
+
+            <li class="nav__item">
+              <a class="nav__link" href="">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <!-- /.nav -->
+      </div>
+      <!-- /.header__nav -->
+
+      <div class="header__action ms-auto d-none d-md-block">
+        <button class="button button--small button-outline">ЗАКАЗАТЬ ТУР</button>
+      </div>
+      <!-- /.header__action -->
+
+      <div class="header__burger d-block d-lg-none ms-auto ms-md-4">
+        <button class="hamburger hamburger--squeeze" type="button">
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
+        </button>
+      </div>
+      <!-- /.header__burger -->
+    </div>
+    <!-- /.header__wrapper -->
   </header>
 
   <!-- Основной контент -->

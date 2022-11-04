@@ -1,0 +1,11 @@
+.button-outline {
+  border-color: $palette-cyan;
+  color: $color-text__cyan;
+
+  @media (hover: hover) {
+    &:hover {
+      background-color: $palette-cyan;
+      color: $color-text__white;
+    }
+  }
+}

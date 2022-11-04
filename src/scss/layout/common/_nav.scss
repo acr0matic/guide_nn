@@ -4,11 +4,31 @@
 
 .nav {
   &__list {
+    display: flex;
+    align-items: center;
   }
 
   &__item {
   }
 
   &__link {
+    padding: 10px 0;
+
+    text-transform: uppercase;
+    transition: $transition ease;
+
+    @media (hover: hover) {
+      &:hover {
+        color: $color-text__cyan;
+      }
+    }
+  }
+
+  &--header {
+    .nav__item {
+      &:not(:last-child) {
+        margin-right: 40px;
+      }
+    }
   }
 }
