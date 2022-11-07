@@ -1,0 +1,14 @@
+#about {
+}
+
+.about {
+  &__picture {
+    @include breakpoint($breakpoint-tablet--large) {
+      width: 60%;
+    }
+
+    @include breakpoint($breakpoint-tablet) {
+      width: 100%;
+    }
+  }
+}

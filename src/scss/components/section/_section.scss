@@ -32,5 +32,18 @@
     font-size: $font-size__title--medium;
 
     text-transform: uppercase;
+
+    &--big {
+      @include breakpoint($breakpoint-laptop) {
+        font-size: $font-size__title--medium + 10px;
+      }
+
+      @include breakpoint($breakpoint-tablet) {
+        font-size: $font-size__title--medium;
+      }
+
+      font-size: $font-size__title--large;
+      line-height: 1;
+    }
   }
 }
