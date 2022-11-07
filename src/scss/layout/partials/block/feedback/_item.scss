@@ -1,0 +1,25 @@
+.feedback-item {
+  @include breakpoint($breakpoint-tablet--large) {
+    padding: 60px 20px;
+  }
+
+  padding: 80px 40px;
+
+  background-color: $palette-white;
+  text-align: center;
+
+  &__text,
+  &__name {
+    @include breakpoint($breakpoint-tablet--large) {
+      font-size: $font-size__text--big;
+    }
+
+    font-size: $font-size__text--large;
+  }
+
+  &__text {
+    margin-bottom: 30px;
+
+    font-weight: $weight-Bold;
+  }
+}

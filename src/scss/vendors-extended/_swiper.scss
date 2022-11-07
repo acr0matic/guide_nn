@@ -18,3 +18,38 @@
     height: initial;
   }
 }
+
+.swiper {
+  &-button {
+    &-prev,
+    &-next {
+    }
+
+    &-prev {
+      left: -65px;
+    }
+
+    &-next {
+      right: -65px;
+    }
+  }
+}
+
+.swiper-pagination {
+  position: static;
+  margin-top: 30px;
+
+  &-bullet {
+    width: 14px;
+    height: 14px;
+
+    margin: 0 10px !important;
+
+    background-color: #d9d9d9;
+    opacity: 1;
+
+    &-active {
+      background-color: $palette-cyan;
+    }
+  }
+}

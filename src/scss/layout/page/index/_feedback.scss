@@ -1,0 +1,40 @@
+#feedback {
+  @include breakpoint($breakpoint-laptop) {
+    padding-top: 80px;
+    padding-bottom: 140px;
+  }
+
+  @include breakpoint($breakpoint-tablet) {
+    padding-top: 60px;
+    padding-bottom: 120px;
+  }
+
+  @include breakpoint($breakpoint-mobile--large) {
+    padding-top: 80px;
+    padding-bottom: 60px;
+  }
+
+  padding-top: 120px;
+  padding-bottom: 180px;
+  background-color: $palette-white--pale;
+}
+
+.feedback {
+  &__slider {
+    @include breakpoint($breakpoint-laptop--large) {
+      width: 90%;
+    }
+
+    @include breakpoint(max-width 600px) {
+      width: 100%;
+    }
+
+    margin: 0 auto;
+
+    .swiper-control {
+      @include breakpoint(max-width 600px) {
+        display: none;
+      }
+    }
+  }
+}
