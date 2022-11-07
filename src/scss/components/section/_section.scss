@@ -1,2 +1,36 @@
 .section {
+  &:not(:last-child) {
+    @include breakpoint($breakpoint-tablet) {
+      margin-bottom: 125px;
+    }
+
+    margin-bottom: 150px;
+  }
+
+  &__header {
+    @include breakpoint($breakpoint-laptop) {
+      margin-bottom: 60px;
+    }
+
+    @include breakpoint($breakpoint-tablet) {
+      margin-bottom: 45px;
+    }
+
+    margin-bottom: 75px;
+  }
+
+  &__title {
+    @include breakpoint($breakpoint-laptop) {
+      font-size: $font-size__title--medium - 10px;
+    }
+
+    @include breakpoint($breakpoint-tablet) {
+      font-size: $font-size__title--small + 4px;
+    }
+
+    font-weight: $weight-ExtraBold;
+    font-size: $font-size__title--medium;
+
+    text-transform: uppercase;
+  }
 }

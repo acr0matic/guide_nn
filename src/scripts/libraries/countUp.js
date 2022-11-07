@@ -158,7 +158,7 @@
         return;
       var bottomOfScroll = window.innerHeight + window.scrollY;
       var rect = self.el.getBoundingClientRect();
-      var bottomOfEl = rect.top + rect.height + window.pageYOffset;
+      var bottomOfEl = rect.top - rect.height + window.pageYOffset;
       if (bottomOfEl < bottomOfScroll && bottomOfEl > window.scrollY && self.paused) {
         // in view
         self.paused = false;
