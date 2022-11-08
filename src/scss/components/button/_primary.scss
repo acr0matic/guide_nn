@@ -1,0 +1,10 @@
+.button-primary {
+  background-color: $palette-cyan;
+  color: $color-text__white;
+
+  @media (hover: hover) {
+    &:hover {
+      background-color: #05b6a9;
+    }
+  }
+}

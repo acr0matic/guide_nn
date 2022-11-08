@@ -1,10 +1,19 @@
 #advantage {
+  margin-top: 200px;
+
+  .curve {
+    position: absolute;
+    top: -260px;
+    right: -175px;
+  }
 }
 
 .advantage {
   &__item {
     display: flex;
     flex-direction: column;
+
+    text-align: center;
   }
 
   &__digit,
@@ -41,7 +50,7 @@
       line-height: 1.5;
     }
 
-    font-size: $font-size__title--large;
+    font-size: $font-size__title--large - 8px;
     line-height: 1;
   }
 
