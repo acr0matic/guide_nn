@@ -11,3 +11,6 @@ const lazyLoadInstance = new LazyLoad({
 
 const scrollController = new SmoothScroll('a[href*="#"]', scrollParams);
 const parallaxInstance = new Parallax(document.querySelector('.hero__illustration'));
+
+const forms = document.querySelectorAll('form');
+forms.forEach(form => new Form(form));

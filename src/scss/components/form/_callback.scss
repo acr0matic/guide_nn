@@ -1,0 +1,19 @@
+.form-callback {
+  .form__content {
+    width: 80%;
+  }
+
+  .form__input {
+    margin-bottom: 70px;
+  }
+
+  .input {
+    &:not(:last-child) {
+      margin-bottom: 45px;
+    }
+  }
+
+  .button {
+    width: 100%;
+  }
+}

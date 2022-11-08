@@ -1,0 +1,10 @@
+#callback {
+  overflow: hidden;
+  padding-bottom: 75px;
+}
+
+.callback {
+  &__picture {
+    width: 120%;
+  }
+}
