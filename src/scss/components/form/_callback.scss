@@ -1,5 +1,9 @@
 .form-callback {
   .form__content {
+    @include breakpoint($breakpoint-tablet--large) {
+      width: 100%;
+    }
+
     width: 80%;
   }
 

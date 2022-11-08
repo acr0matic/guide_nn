@@ -16,6 +16,10 @@
   }
 
   &--hero {
+    @include breakpoint($breakpoint-tablet) {
+      width: 320px;
+    }
+
     width: 560px;
     opacity: 1 !important;
   }

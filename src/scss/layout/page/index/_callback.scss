@@ -1,10 +1,20 @@
 #callback {
+  @include breakpoint($breakpoint-tablet) {
+    padding-bottom: 0;
+  }
+
   overflow: hidden;
   padding-bottom: 75px;
 }
 
 .callback {
   &__picture {
+    @include breakpoint($breakpoint-tablet--large) {
+      width: 100%;
+      margin-top: 75px;
+      transform: scale(1.2);
+    }
+
     width: 120%;
   }
 }

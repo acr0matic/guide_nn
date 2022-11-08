@@ -1,7 +1,25 @@
 #advantage {
+  @include breakpoint($breakpoint-tablet) {
+    margin-top: 0;
+  }
+
   margin-top: 200px;
 
   .curve {
+    @include breakpoint($breakpoint-laptop--medium) {
+      right: -260px;
+    }
+
+    @include breakpoint($breakpoint-laptop) {
+      top: -250px;
+      right: -250px;
+      width: 700px;
+    }
+
+    @include breakpoint($breakpoint-tablet--large) {
+      display: none;
+    }
+
     position: absolute;
     top: -260px;
     right: -175px;

@@ -1,4 +1,9 @@
 .button {
+  @include breakpoint($breakpoint-tablet) {
+    min-width: initial;
+    padding: 20px 36px;
+  }
+
   display: inline-block;
   min-width: 380px;
 

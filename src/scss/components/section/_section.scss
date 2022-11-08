@@ -1,6 +1,6 @@
 .section {
   &:not(:last-child) {
-    @include breakpoint($breakpoint-tablet) {
+    @include breakpoint($breakpoint-laptop) {
       margin-bottom: 125px;
     }
 
@@ -14,6 +14,10 @@
 
     @include breakpoint($breakpoint-tablet) {
       margin-bottom: 45px;
+    }
+
+    @include breakpoint($breakpoint-mobile--large) {
+      margin-bottom: 25px;
     }
 
     margin-bottom: 75px;
