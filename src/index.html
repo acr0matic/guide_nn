@@ -60,11 +60,11 @@
   <!-- endbuild -->
 </head>
 
-<body>
+<body class="custom-scrollbar">
   <!-- Шапка -->
   <header id="header" class="header">
     <div class="header__wrapper">
-      <div class="header__logo d-none d-md-block">
+      <div class="header__logo d-md-block">
         <a href="#">
           <img class="logo logo--header" src="img/logo.svg" alt="">
         </a>
@@ -92,7 +92,7 @@
       <!-- /.header__nav -->
 
       <div class="header__action ms-auto d-none d-md-block">
-        <button class="button button--small button-outline">ЗАКАЗАТЬ ТУР</button>
+        <a href="#tour" class="button button--small button-outline">ЗАКАЗАТЬ ТУР</a>
       </div>
       <!-- /.header__action -->
 
@@ -106,6 +106,32 @@
       <!-- /.header__burger -->
     </div>
     <!-- /.header__wrapper -->
+
+    <div class="mobile-menu">
+      <div class="mobile-menu__wrapper">
+        <div class="mobile-menu__nav">
+          <nav class="nav nav--mobile">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a class="nav__link" href="">Туры</a>
+              </li>
+
+              <li class="nav__item">
+                <a class="nav__link" href="">О нас</a>
+              </li>
+
+              <li class="nav__item">
+                <a class="nav__link" href="">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <!-- /.nav -->
+        </div>
+        <!-- /.mobile-menu__nav -->
+      </div>
+      <!-- /.mobile-menu__wrapper -->
+    </div>
+    <!-- /.mobile-menu -->
   </header>
 
   <!-- Основной контент -->
@@ -534,6 +560,7 @@
 
   <script src="scripts/base.js"></script>
   <script src="scripts/init.js"></script>
+  <script src="scripts/header.js"></script>
   <script src="scripts/advantage.js"></script>
   <script src="scripts/slider.js"></script>
   <!-- endbuild -->

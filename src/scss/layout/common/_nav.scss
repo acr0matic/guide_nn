@@ -31,4 +31,17 @@
       }
     }
   }
+
+  &--mobile {
+    .nav__list {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .nav__item {
+      &:not(:last-child) {
+        margin-bottom: 16px;
+      }
+    }
+  }
 }

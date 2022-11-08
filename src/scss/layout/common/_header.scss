@@ -7,6 +7,10 @@
     padding: 0 24px;
   }
 
+  @include breakpoint($breakpoint-tablet) {
+    padding: 0 16px;
+  }
+
   position: sticky;
   z-index: $z-index-header;
   top: 0;
@@ -23,10 +27,28 @@
       padding: 24px 0;
     }
 
+    @include breakpoint($breakpoint-tablet) {
+      padding: 18px 0;
+    }
+
     display: flex;
     align-items: center;
 
     padding: 18px 0;
+  }
+
+  &__logo {
+    @include breakpoint($breakpoint-tablet) {
+      opacity: 0;
+      visibility: hidden;
+    }
+
+    transition: $transition ease;
+
+    &--visible {
+      opacity: 1;
+      visibility: visible;
+    }
   }
 
   &__nav {
