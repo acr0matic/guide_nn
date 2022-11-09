@@ -30,6 +30,11 @@
     pointer-events: none;
   }
 
+  &--block {
+    width: 100%;
+    min-width: initial;
+  }
+
   &--small {
     min-width: initial;
     padding: 12px 40px;

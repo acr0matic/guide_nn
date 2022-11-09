@@ -31,3 +31,14 @@ const feedback = new Swiper('.slider-feedback', {
     },
   }
 });
+
+const gallery = new Swiper('.slider-gallery', {
+  slidesPerView: 1,
+  speed: 300,
+  spaceBetween: 16,
+
+  pagination: {
+    el: '#modal-tour .swiper-pagination',
+    clickable: true,
+  },
+});

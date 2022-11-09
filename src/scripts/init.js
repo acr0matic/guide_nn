@@ -14,3 +14,5 @@ const parallaxInstance = new Parallax(document.querySelector('.hero__illustratio
 
 const forms = document.querySelectorAll('form');
 forms.forEach(form => new Form(form));
+
+MicroModal.init(modalParams);

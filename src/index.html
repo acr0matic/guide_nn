@@ -83,7 +83,7 @@
             </li>
 
             <li class="nav__item">
-              <a class="nav__link" href="#contact">Контакты</a>
+              <a class="nav__link" href="#callback">Контакты</a>
             </li>
           </ul>
         </nav>
@@ -113,15 +113,15 @@
           <nav class="nav nav--mobile">
             <ul class="nav__list">
               <li class="nav__item">
-                <a class="nav__link" href="">Туры</a>
+                <a class="nav__link" href="#tour">Прогулки</a>
               </li>
 
               <li class="nav__item">
-                <a class="nav__link" href="">О нас</a>
+                <a class="nav__link" href="#about">О нас</a>
               </li>
 
               <li class="nav__item">
-                <a class="nav__link" href="">Контакты</a>
+                <a class="nav__link" href="#callback">Контакты</a>
               </li>
             </ul>
           </nav>
@@ -547,6 +547,184 @@
 
   </footer>
 
+  <div class="modal modal-tour micromodal-slide" id="modal-tour" aria-hidden="true" data-micromodal-close>
+    <div class="modal__overlay">
+      <div class="modal__container" role="dialog">
+        <header class="modal__header">
+          <h2 class="modal__title">
+            Прогулка на яхте
+          </h2>
+
+          <svg data-micromodal-close class="modal__close" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path data-micromodal-close d="M7 5L5.23223 6.76777L22.9099 24.4454L24.6777 22.6777L7 5Z" fill="#009D92" />
+            <path data-micromodal-close d="M5 23L6.76777 24.7678L24.4454 7.09009L22.6777 5.32233L5 23Z" fill="#009D92" />
+          </svg>
+
+          <div data-micromodal-close class="modal__swipe"></div>
+        </header>
+
+        <div class="row flex-column-reverse flex-lg-row align-items-center align-items-lg-start">
+          <div class="col-12 col-lg-7">
+            <main class="modal__content">
+              <div class="modal__text custom-scrollbar custom-scrollbar--background">
+                <p>
+                  На катере вы сможете совершить прогулку по рекам Волге и Оке, отдохнуть, позагорать и искупаться на островах, совершить обзорную прогулку, порыбачить или провести романтический вечер.
+                  <br> <br>
+                  Этот тур подходит тем, кто верит в исполнение желаний! А еще немного мистик и волшебник внутри.
+                  <br> <br>
+                  Прогулка проходит по Никитской улице, Патриаршим прудам, «булгаковским» местам, где буквально каждый дом, каждый закоулок хранит свою тайну.
+                  <br> <br>
+                  Что вас ждет? Проделки московского чернокнижника, знакомство с Белой Дамой, любимый дом Воланда, самый сильный лев Москвы. Откроем вам тайны Патриарших прудов! Вы знаете, что лебеди не остаются ночевать на Патриарших?
+                  На катере вы сможете совершить прогулку по рекам Волге и Оке, отдохнуть, позагорать и искупаться на островах, совершить обзорную прогулку, порыбачить или провести романтический вечер.
+                  <br> <br>
+                  Этот тур подходит тем, кто верит в исполнение желаний! А еще немного мистик и волшебник внутри.
+                  <br> <br>
+                  Прогулка проходит по Никитской улице, Патриаршим прудам, «булгаковским» местам, где буквально каждый дом, каждый закоулок хранит свою тайну.
+                  <br> <br>
+                  Что вас ждет? Проделки московского чернокнижника, знакомство с Белой Дамой, любимый дом Воланда, самый сильный лев Москвы. Откроем вам тайны Патриарших прудов! Вы знаете, что лебеди не остаются ночевать на Патриарших?
+                </p>
+              </div>
+              <!-- /.modal__text -->
+
+              <div class="modal__additional d-none d-md-flex">
+                <div class="modal__info">
+                  <svg class="icon svg" width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M9.5 3.1665V12.6665H9.51583L9.5 12.6823L15.8333 18.9998L9.5 25.3332L9.51583 25.349H9.5V34.8332H28.5V25.349H28.4842L28.5 25.3332L22.1667 18.9998L28.5 12.6823L28.4842 12.6665H28.5V3.1665H9.5ZM25.3333 26.1248V31.6665H12.6667V26.1248L19 19.7915L25.3333 26.1248ZM12.6667 11.8748L19 18.2082L25.3333 11.8748V6.33317H12.6667V11.8748Z"
+                      fill="black" />
+                  </svg>
+
+                  2,5 часа
+                </div>
+                <!-- /.modal__info -->
+
+                <div class="modal__info">
+                  <svg class="icon svg" width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M29.1977 6.53933L31.7785 3.9585C37.9694 10.371 37.9535 19.966 31.7785 26.1252L29.1977 23.5443C33.5835 18.5093 33.5835 11.321 29.1977 6.53933ZM20.5844 15.0418C20.5844 18.541 17.7502 21.3752 14.251 21.3752C10.7519 21.3752 7.91768 18.541 7.91768 15.0418C7.91768 11.5427 10.7519 8.7085 14.251 8.7085C17.7502 8.7085 20.5844 11.5427 20.5844 15.0418ZM17.4177 15.0418C17.4177 13.3002 15.9927 11.8752 14.251 11.8752C12.5094 11.8752 11.0844 13.3002 11.0844 15.0418C11.0844 16.7835 12.5094 18.2085 14.251 18.2085C15.9927 18.2085 17.4177 16.7835 17.4177 15.0418ZM14.251 24.5418C10.0235 24.5418 1.58435 26.6635 1.58435 30.8752V34.0418H26.9177V30.8752C26.9177 26.6635 18.4785 24.5418 14.251 24.5418ZM14.251 27.7085C9.99185 27.7085 5.09935 29.7352 4.75102 30.8752H23.751C23.4344 29.751 18.526 27.7085 14.251 27.7085ZM23.8777 11.9543C25.2077 13.8227 25.2077 16.2452 23.8777 18.1135L26.5377 20.7893C29.736 17.591 29.736 12.7618 26.5377 9.2785L23.8777 11.9543Z"
+                      fill="black" />
+                  </svg>
+
+                  Иванов Иван Иванович
+                </div>
+                <!-- /.modal__info -->
+              </div>
+              <!-- /.modal__additional -->
+            </main>
+          </div>
+          <!-- /.col-7 -->
+
+          <div class="col-12 col-sm-8 col-lg-5 ps-md-5">
+            <div class="modal__gallery modal-gallery">
+              <div class="slider gallery__slider">
+                <div class="slider__wrapper">
+                  <div class="swiper slider-gallery">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <picture class="gallery__picture lazy">
+                          <img class="image image--cover lazy__item" data-src="https://picsum.photos/500?random=7" src="" alt="">
+                          <img class="preloader" src="img/preloader.svg" alt="">
+                        </picture>
+                      </div>
+                      <!-- /.swiper-slide -->
+
+                      <div class="swiper-slide">
+                        <picture class="gallery__picture lazy">
+                          <img class="image image--cover lazy__item" data-src="https://picsum.photos/500?random=8" src="" alt="">
+                          <img class="preloader" src="img/preloader.svg" alt="">
+                        </picture>
+                      </div>
+                      <!-- /.swiper-slide -->
+
+                      <div class="swiper-slide">
+                        <picture class="gallery__picture lazy">
+                          <img class="image image--cover lazy__item" data-src="https://picsum.photos/500?random=9" src="" alt="">
+                          <img class="preloader" src="img/preloader.svg" alt="">
+                        </picture>
+                      </div>
+                      <!-- /.swiper-slide -->
+
+                      <div class="swiper-slide">
+                        <picture class="gallery__picture lazy">
+                          <img class="image image--cover lazy__item" data-src="https://picsum.photos/500?random=10" src="" alt="">
+                          <img class="preloader" src="img/preloader.svg" alt="">
+                        </picture>
+                      </div>
+                      <!-- /.swiper-slide -->
+                    </div>
+                    <!-- /.swiper-wrapper -->
+                  </div>
+                  <!-- /.swiper slider-gallery -->
+                </div>
+                <!-- /.slider__wrapper -->
+
+                <div class="swiper-pagination"></div>
+              </div>
+              <!-- /.slider -->
+            </div>
+            <!-- /.modal__gallery gallery -->
+
+            <div class="modal__additional d-block d-md-none">
+              <div class="modal__info">
+                <svg class="icon svg" width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M9.5 3.1665V12.6665H9.51583L9.5 12.6823L15.8333 18.9998L9.5 25.3332L9.51583 25.349H9.5V34.8332H28.5V25.349H28.4842L28.5 25.3332L22.1667 18.9998L28.5 12.6823L28.4842 12.6665H28.5V3.1665H9.5ZM25.3333 26.1248V31.6665H12.6667V26.1248L19 19.7915L25.3333 26.1248ZM12.6667 11.8748L19 18.2082L25.3333 11.8748V6.33317H12.6667V11.8748Z"
+                    fill="black" />
+                </svg>
+
+                2,5 часа
+              </div>
+              <!-- /.modal__info -->
+
+              <div class="modal__info">
+                <svg class="icon svg" width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M29.1977 6.53933L31.7785 3.9585C37.9694 10.371 37.9535 19.966 31.7785 26.1252L29.1977 23.5443C33.5835 18.5093 33.5835 11.321 29.1977 6.53933ZM20.5844 15.0418C20.5844 18.541 17.7502 21.3752 14.251 21.3752C10.7519 21.3752 7.91768 18.541 7.91768 15.0418C7.91768 11.5427 10.7519 8.7085 14.251 8.7085C17.7502 8.7085 20.5844 11.5427 20.5844 15.0418ZM17.4177 15.0418C17.4177 13.3002 15.9927 11.8752 14.251 11.8752C12.5094 11.8752 11.0844 13.3002 11.0844 15.0418C11.0844 16.7835 12.5094 18.2085 14.251 18.2085C15.9927 18.2085 17.4177 16.7835 17.4177 15.0418ZM14.251 24.5418C10.0235 24.5418 1.58435 26.6635 1.58435 30.8752V34.0418H26.9177V30.8752C26.9177 26.6635 18.4785 24.5418 14.251 24.5418ZM14.251 27.7085C9.99185 27.7085 5.09935 29.7352 4.75102 30.8752H23.751C23.4344 29.751 18.526 27.7085 14.251 27.7085ZM23.8777 11.9543C25.2077 13.8227 25.2077 16.2452 23.8777 18.1135L26.5377 20.7893C29.736 17.591 29.736 12.7618 26.5377 9.2785L23.8777 11.9543Z"
+                    fill="black" />
+                </svg>
+
+                Иванов Иван Иванович
+              </div>
+              <!-- /.modal__info -->
+            </div>
+            <!-- /.modal__additional -->
+
+            <div class="modal__action">
+              <button class="button button--block button-primary">Записаться на тур</button>
+            </div>
+            <!-- /.modal__action -->
+          </div>
+          <!-- /.col-5 -->
+        </div>
+        <!-- /.row -->
+      </div>
+      <!-- /.modal__container -->
+    </div>
+    <!-- /.modal__overlay -->
+  </div>
+  <!-- /.modal -->
+
+  <div class="modal modal-success micromodal-slide" id="modal-success" aria-hidden="true">
+    <div class="modal__overlay" data-micromodal-close>
+      <div class="modal__container" role="dialog">
+        <header class="modal__header">
+          <h2 class="modal__title">
+            Спасибо!
+          </h2>
+        </header>
+
+        <main class="modal__content">
+          <p class="modal__text">
+            Мы свяжемся с вами в течение 10 минут
+          </p>
+        </main>
+      </div>
+      <!-- /.modal__container -->
+    </div>
+    <!-- /.modal__overlay -->
+  </div>
+  <!-- /.modal -->
+
   <!-- Скрипты -->
   <!-- build:js js/script.min.js -->
   <script src="scripts/libraries/lazyload.js"></script>
@@ -563,6 +741,7 @@
   <script src="scripts/header.js"></script>
   <script src="scripts/advantage.js"></script>
   <script src="scripts/slider.js"></script>
+  <script src="scripts/modal.js"></script>
   <!-- endbuild -->
 </body>
 

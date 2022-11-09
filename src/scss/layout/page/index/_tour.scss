@@ -38,6 +38,16 @@
     flex-direction: column;
 
     height: 100%;
+
+    cursor: pointer;
+
+    @media (hover: hover) {
+      &:hover {
+        .tour__title {
+          color: $color-text__cyan;
+        }
+      }
+    }
   }
 
   &__picture,
@@ -91,6 +101,7 @@
     font-size: $font-size__text--large;
 
     text-transform: uppercase;
+    transition: $transition ease;
   }
 
   &__description {
