@@ -1,0 +1,21 @@
+.form-modal {
+  @include breakpoint($breakpoint-tablet) {
+    width: 100%;
+  }
+
+  width: 80%;
+
+  .form__header {
+    margin-bottom: 40px;
+  }
+
+  .form__input {
+    margin-bottom: 70px;
+  }
+
+  .input {
+    &:not(:last-child) {
+      margin-bottom: 45px;
+    }
+  }
+}

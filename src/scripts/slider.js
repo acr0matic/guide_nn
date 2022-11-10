@@ -42,3 +42,17 @@ const gallery = new Swiper('.slider-gallery', {
     clickable: true,
   },
 });
+
+const modalSlider = new Swiper('.slider-modal', {
+  slidesPerView: 1,
+  speed: 300,
+  spaceBetween: 16,
+  allowTouchMove: false,
+  simulateTouch: false,
+  autoHeight: true,
+
+  effect: 'fade',
+  fadeEffect: {
+    crossFade: true
+  },
+});

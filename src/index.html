@@ -1047,7 +1047,7 @@
   <div class="modal modal-tour micromodal-slide" id="modal-tour" aria-hidden="true" data-micromodal-close>
     <div class="modal__overlay">
       <div class="modal__container" role="dialog">
-        <header class="modal__header">
+        <div class="modal__header">
           <h2 class="modal__title">
             Прогулка на яхте
           </h2>
@@ -1057,27 +1057,85 @@
             <path data-micromodal-close d="M5 23L6.76777 24.7678L24.4454 7.09009L22.6777 5.32233L5 23Z" fill="#009D92" />
           </svg>
 
-          <div data-micromodal-close class="modal__swipe"></div>
-        </header>
+          <div class="modal__swipe"></div>
+        </div>
 
-        <div class="row flex-column-reverse flex-lg-row align-items-center align-items-lg-start">
+        <div class="row flex-column-reverse flex-lg-row align-items-center align-items-lg-start position-relative">
           <div class="col-12 col-lg-7">
-            <main class="modal__content">
-              <div class="modal__text custom-scrollbar custom-scrollbar--background">
+            <div class="swiper slider-modal">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <main class="modal__content">
+                    <div class="modal__text custom-scrollbar custom-scrollbar--background">
 
+                    </div>
+                    <!-- /.modal__text -->
+
+                    <div class="modal__additional d-none d-md-flex">
+
+                    </div>
+                    <!-- /.modal__additional -->
+                  </main>
+                </div>
+                <!-- /.swiper-slide -->
+
+                <div class="swiper-slide">
+                  <form action="" class="modal__form form form-modal">
+                    <div class="form__header">
+                      <h3 class="form__title">Заполните информацию</h3>
+                      <p class="form__description">Мы перезвоним Вам и сделаем лучший тур по Нижнему Новгороду</p>
+                    </div>
+                    <!-- /.form__header -->
+
+                    <div class="form__content">
+                      <div class="form__input">
+                        <div class="input">
+                          <input placeholder="Ваше имя" autocomplete="off" type="text" name="user_name" class="input__field">
+                          <span class="input__error">Имя указано некорректно</span>
+                        </div>
+                        <!-- /.input -->
+
+                        <div class="input">
+                          <input data-required placeholder="+7 (999) 999-99-99" autocomplete="off" type="tel" name="user_phone" class="input__field">
+                          <span class="input__error">Телефон не указан или указан некорректно</span>
+                        </div>
+                        <!-- /.input -->
+
+                        <div class="input">
+                          <input placeholder="Ваши пожелания" autocomplete="off" type="text" name="user_message" class="input__field">
+                          <span class="input__error">Слишком короткое значение</span>
+                        </div>
+                        <!-- /.input -->
+                      </div>
+                      <!-- /.form__input -->
+
+                      <div class="form__action">
+                        <button type="submit" data-sending="Отправка..." class="button button--block button-primary">
+                          Записаться на тур
+                        </button>
+
+                        <div class="form__privacy">
+                          Нажимая на кнопку, Вы соглашаетесь с
+                          <a class="link link--underline" href="">политикой конфиденциальности</a>
+                        </div>
+                        <!-- /.form__privacy -->
+                      </div>
+                      <!-- /.form__action -->
+                    </div>
+                    <!-- /.form__content -->
+                  </form>
+                  <!-- /.callback__form form form-callback -->
+                </div>
+                <!-- /.swiper-slide -->
               </div>
-              <!-- /.modal__text -->
-
-              <div class="modal__additional d-none d-md-flex">
-
-              </div>
-              <!-- /.modal__additional -->
-            </main>
+              <!-- /.swiper-wrapper -->
+            </div>
+            <!-- /.swiper slider-modal -->
           </div>
           <!-- /.col-7 -->
 
           <div class="col-12 col-sm-8 col-lg-5 ps-md-5">
-            <div class="modal__gallery modal-gallery">
+            <div class="modal__gallery modal__gallery--offset modal-gallery">
               <div class="slider gallery__slider">
                 <div class="slider__wrapper">
                   <div class="swiper slider-gallery">
@@ -1139,11 +1197,11 @@
   <div class="modal modal-success micromodal-slide" id="modal-success" aria-hidden="true">
     <div class="modal__overlay" data-micromodal-close>
       <div class="modal__container" role="dialog">
-        <header class="modal__header">
+        <div class="modal__header">
           <h2 class="modal__title">
             Спасибо!
           </h2>
-        </header>
+        </div>
 
         <main class="modal__content">
           <p class="modal__text">

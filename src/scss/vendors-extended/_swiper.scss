@@ -20,6 +20,10 @@
 }
 
 .swiper {
+  &-wrapper {
+    box-sizing: border-box;
+  }
+
   &-button {
     &-prev,
     &-next {
