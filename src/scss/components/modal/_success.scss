@@ -1,5 +1,10 @@
 .modal-success {
   .modal__container {
+    @include breakpoint($breakpoint-tablet) {
+      padding: 25px;
+    }
+
+    max-width: 480px;
     padding: 25px 40px;
   }
 

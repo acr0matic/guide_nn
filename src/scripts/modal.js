@@ -53,7 +53,8 @@ if (tour) {
 
         gallery.slideTo(0);
 
-        MicroModal.show(modal.id, modalParams);
+        currentModal = modal.id;
+        MicroModal.show(currentModal, modalParams);
       });
     });
   }
