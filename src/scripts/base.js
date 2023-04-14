@@ -11,6 +11,7 @@ const scrollParams = {
 const modalParams = {
   awaitCloseAnimation: true,
   disableFocus: true,
+  disableScroll: true,
 }
 
 let currentModal = null;

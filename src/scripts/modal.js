@@ -9,7 +9,7 @@ if (tour) {
     const title = modal.querySelector('.modal__title');
     const content = modal.querySelector('.modal__text');
     const images = modal.querySelector('.gallery__slider .swiper-wrapper');
-    const additional = modal.querySelector('.modal__additional ');
+    const additional = modal.querySelectorAll('.modal__additional ');
 
     const modalGallery = modal.querySelector('.modal__gallery');
     const button = modal.querySelector(".modal__action .button");
@@ -43,16 +43,17 @@ if (tour) {
 
         if (isTablet) document.body.classList.add('disable-scroll');
 
-        form.dataset.subject = title.innerHTML;
-
-        title.innerHTML = item.querySelector('.tour__title').innerHTML;
+        title.innerHTML = item.querySelector('.tour__title').innerHTML.replace(/\n/g, "");
         content.innerHTML = item.querySelector('.tour__content .content').innerHTML;
         images.innerHTML = item.querySelector('.tour__content .gallery').innerHTML;
-        additional.innerHTML = item.querySelector('.tour__content .info').innerHTML;
-        lazyLoadInstance.update();
+        additional.forEach(block => {
+          block.innerHTML = item.querySelector('.tour__content .info').innerHTML;
+        });
 
+        lazyLoadInstance.update();
         gallery.slideTo(0);
 
+        form.dataset.subject = title.innerHTML;
         currentModal = modal.id;
         MicroModal.show(currentModal, modalParams);
       });
