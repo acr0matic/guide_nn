@@ -107,7 +107,8 @@
   &__animation {
     @include breakpoint($breakpoint-mobile--large) {
       top: 160%;
-      transform: translateY(-50%) rotate(90deg);
+      left: 50%;
+      transform: translateY(-50%) rotate(60deg);
     }
 
     position: absolute;
